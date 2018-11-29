@@ -1,6 +1,6 @@
 '''
-   author:TaoZI
-   date:2016/12/22
+   author:Hao Xu, Shanhai Liao, Zheng Gu, Jinyi Tang
+   date:2018/11/22
 '''
 import datetime
 import numpy as np
