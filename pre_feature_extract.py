@@ -1,8 +1,6 @@
 import datetime
 import numpy as np
 import pandas as pd
-import xgboost as xgb
-import itertools
 
 pd.options.mode.chained_assignment = None
 

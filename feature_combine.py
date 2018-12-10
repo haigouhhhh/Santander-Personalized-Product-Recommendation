@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import itertools
 
 target_cols = ['ind_cco_fin_ult1', 'ind_cder_fin_ult1',

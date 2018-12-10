@@ -11,7 +11,7 @@ from sklearn.model_selection import KFold
 pd.options.mode.chained_assignment = None
 
 mapping_dict = {
-    # data for gender, activity index, segmentation, new customer index, customer relation type, foreigner index
+    # features as gender, activity index, segmentation, new customer index, customer relation type, foreigner index
     'sexo': {'nan': 0, 'H': 0, 'V': 1},
     'ind_actividad_cliente': {'nan': 0, '0.0': 0, '0': 0, '1.0': 1, '1': 1},
     'segmento': {'nan': 0, '01 - TOP': 0, '03 - UNIVERSITARIO': 1, '02 - PARTICULARES': 2},

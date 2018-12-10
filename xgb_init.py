@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import xgboost as xgb
-from sklearn.model_selection import KFold
 
 target_raw_cols = ['ind_ahor_fin_ult1', 'ind_aval_fin_ult1', 'ind_cco_fin_ult1', 'ind_cder_fin_ult1',
                    'ind_cno_fin_ult1', 'ind_ctju_fin_ult1', 'ind_ctma_fin_ult1', 'ind_ctop_fin_ult1',
@@ -79,9 +78,6 @@ if __name__ == "__main__":
         test_temp = pd.read_csv(data_path + 'test_feats_' + col + '.csv')
         test_X = pd.concat([test_X, test_temp], axis=1)
     del test_temp
-
-    # train_X  = pd.read_csv(data_path + 'train_feats_v1.csv')
-    # test_X  = pd.read_csv(data_path + 'test_feats_v1.csv')
 
     train_y = train_X['label'].values
     train_X = train_X.drop('label', axis=1).values
