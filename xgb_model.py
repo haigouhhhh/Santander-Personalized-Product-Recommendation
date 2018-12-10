@@ -30,6 +30,7 @@ target_raw_cols = ['ind_ahor_fin_ult1', 'ind_aval_fin_ult1', 'ind_cco_fin_ult1',
 # except saving account and guarantees
 target_cols = target_raw_cols[2:]
 
+# features as customer code, table column, age, customer seniority, gross income
 con_cols = ['ncodpers', 'fecha_dato', 'age', 'antiguedad', 'renta']
 cat_cols = list(mapping_dict)
 user_cols = con_cols + cat_cols + target_raw_cols
